@@ -141,6 +141,13 @@ nav {
         width: 45px;
         margin-left: 1px;
     }
+
+    header .pages-title  {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+   
  
 }
 
