@@ -1,11 +1,16 @@
+/* general styles */
 * {
     background-color: black;
     color: white;    
 }
 
+body {
+    overflow-x: hidden; /* prevent horizontal scrolling on all devices */
+}
+
+
 .container {
     display: flex;
-    margin: 30px;
     justify-content: center;
 }
 
@@ -24,14 +29,14 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 90px;
-    font-size: 28px; /* Adjusted for better readability */
-    max-width: 475px; /* Adjust max-width as needed */
+    font-size: 28px;
+    max-width: 475px;
 } 
 
 .intro-title img {
-    width: 440px; /* Set to your desired width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensures responsiveness */
+    width: 440px;
+    height: auto;
+    max-width: 100%;
 }
 
 .contact-container {
@@ -42,16 +47,109 @@
     gap: 65px;
 }
 
+/* navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px 20px; 
+}
+
+.navbar {
+    display: flex;
+    gap: 75px; 
+    margin: 0 auto; 
+    max-width: 800px; 
+}
+
+.logo {
+    margin-right: 600px; 
+}
+
+.logo img {
+    width: 60px; 
+    height: auto;
+    max-width: 100%;
+    margin-left: 75px;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+
+/* mobile styles */
 @media (max-width: 768px) {
     .intro-title {
-        font-size: 30px; /* Smaller font size for smaller screens */
+        font-size: 30px;
+        margin-left: 20px; 
+        margin-right: 20px; 
     }
 
+    .intro-title h1 {
+        margin-top:70px;
+    }
     .intro-para {
-        font-size: 16px; /* Adjust font size for better readability */
+        font-size: 16px;
+        margin-left: 20px;
+        margin-right: 20px; 
+        margin-bottom: 20px;
     }
 
     .contact-container {
-        gap: 15px; /* Adjust gap for smaller screens */
+        gap: 15px;
     }
+
+    nav {
+        flex-direction: row; /* ensure nav items stay in a row */
+        justify-content: space-between; /* distribute space between logo and links */
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 1px; 
+        margin-left: 10px; 
+        flex-wrap: nowrap; 
+        flex-grow: 1; 
+        justify-content: flex-start; /* align links next to the logo */
+    }
+
+
+
+    .navbar a {
+        font-size: 12px;
+        margin-right: 30px;
+    }
+
+
+    .logo {
+        margin-right: auto; 
+    }
+
+    .logo img {
+        height: auto;
+        width: 45px;
+        margin-left: 1px;
+    }
+ 
+}
+
+.pages-title {
+    font-size: 50px;
+    margin-top: 75px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
