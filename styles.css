@@ -88,6 +88,9 @@ nav {
 
 /* mobile styles */
 @media (max-width: 768px) {
+    body,html {
+        overflow-x: hidden; /* prevent horizontal scrolling on all devices */
+    }
     .intro-title {
         font-size: 30px;
         margin-left: 20px; 
@@ -122,6 +125,8 @@ nav {
         flex-wrap: nowrap; 
         flex-grow: 1; 
         justify-content: flex-start; /* align links next to the logo */
+        max-width: 100%;
+        overflow-x: auto;
     }
 
 
