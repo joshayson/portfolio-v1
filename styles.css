@@ -8,7 +8,6 @@ body {
     overflow-x: hidden; /* prevent horizontal scrolling on all devices */
 }
 
-
 .container {
     display: flex;
     justify-content: center;
@@ -152,9 +151,32 @@ nav {
         margin-top: 30px;
     }
 
-   
- 
+    .block {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        padding-left: 20px;  
+        padding-right: 20px; 
+    }
+
+    .cards,.stuff-block .cards{
+        width: 90%; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+        margin-bottom: 20px; 
+    }
+
+    .stuff-block {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%; 
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
 }
+
+   
+
 
 .pages-title {
     font-size: 50px;
@@ -165,3 +187,72 @@ header {
     display: flex;
     justify-content: center;
 }
+
+
+.block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    min-height: 250px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: solid;
+    padding: 30px;
+    border-radius: 10px;
+    border-color: white;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.6); /* Blue glow effect */
+}
+
+.cards p,h2 {
+    margin: 5px;
+}
+
+.date{
+    color: grey
+}
+
+.proj-card {
+    font-style: italic;
+    color:grey;
+}
+
+.cards a {
+    font-size: 20px;
+    color: 3b82f6; 
+    margin: 5px;
+}
+
+
+.stuff-block {
+    display: flex;
+    gap: 30px; 
+    
+}
+
+.stuff-block h2{
+    margin-bottom: 20px;
+}
+
+.stuff-block li {
+    margin-bottom: 30px;
+}
+
+.stuff-block .cards {
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
